@@ -41,3 +41,6 @@ Git GUI's:
 
 Roll back changes with git reset --hard HEAD^ (resets and deletes changes) OR git reset --soft HEAD^ (resets and keeps changes)
 	-Adding a number after carat will reset "number" of changes back
+
+GITHUB:
+-git remote v to see where remote is pulling from
