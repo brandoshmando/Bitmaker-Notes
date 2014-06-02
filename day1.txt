@@ -1,0 +1,43 @@
+-play around with zsh
+
+print working drive: 
+ pwd
+man ls:
+ manual for all commands
+clear terminal:
+ command-k == clears without history
+ command-r == clears to the top, still able to see history
+read/write/execute
+ r / w / e
+ls -la
+	permissions - owner - group(user) - file size(kb)- date/time mod - file name
+	permissions come in sets of three
+ 	d in front of ext = directory
+ 	first three after: oner permissions
+ 	second three: group permissions
+ 	last set: everyone else
+
+ 	Basic mod of permissions : chmod "permision" "user"
+two types of files:
+-ascii: human readable
+-binary: jumbled numbers for comp
+
+Tab Completion!!
+	tab after first letter, complete for youcd 
+Top level:
+cd / == root directory
+
+Force Option:
+Force makes it so that you dont have to confirm each directory/file
+
+GIT:
+
+Command: git status (shows what is being tracked)
+
+Git GUI's:
+-git x
+-git k
+-git gui
+
+Roll back changes with git reset --hard HEAD^ (resets and deletes changes) OR git reset --soft HEAD^ (resets and keeps changes)
+	-Adding a number after carat will reset "number" of changes back
