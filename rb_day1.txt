@@ -1,0 +1,38 @@
+Ruby is:
+
+-a programming language high level
+-a interpretive language: no comiliers. Does runtime and compilation in one step. Makes it a little slower, but easy to use/write
+-object oriented...everything is an object! (Has methods, instances etc)
+
+Numbers:
+	Both of these fall under classInteger:
+	-Fixnum
+	-Bignum
+	Float is a class in itself. Somewhat unpredictable.  Use decimal to be more precise
+
+Operators:
+	== will always be a boolean (true/false)
+
+Strings:
+	" " v ' ': Double quotes enables string interpolation
+
+Variables:
+	Assign multiple variables at once 
+		ex: first_variable, second_variable = 10, 20ex
+
+Control Structures:
+	if statements-
+		-conditional; if true, execute code
+	unless-
+		- opposite of if statement 
+		ex: unless x == 10
+			puts "x isn't true"
+	LOOPS
+	while loop-
+		-passes condition until statement is true
+	until-
+		-very similar to while
+		ex: until something == x
+			counter -=
+
+	iterator def: a method that will enable you to run a block of code on any group of data eg array, hash, string etc.	
