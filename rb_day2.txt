@@ -1,0 +1,26 @@
+METHODS
+	-A method is an executable block of code which can be used over and over again
+	-DRY: Don't Repeat Yourself
+	-A way for different objects to interact with each other
+
+SCOPE
+	-Can't access all methods from anywhere in a program
+
+IMPLICIT AND EXPLCIT RETURN
+
+	-Implicit: Methods return the last line implicitly
+	-Explicit: Manually returning a value by calling return 
+
+	Explicit return not commonly used, but good example is within a while loop to return a value, and if that value matches the conditional in the while loop, it will skip the rest of the code and move on. 
+
+ARRAYS
+	-Call uniq on an array with several of the same value and it will output the uniq values
+	-Array.new(3, "Matz") => ["Matz", "Matz", "Matz"]
+
+ENUMERABLE
+	-A module with methods that is included in both Hashes and Arrays. Generally iterators of some sort. Enables ruby to stick with DRY pinciples. 
+	-map: returns values of the code applied within the block vs each which returns original values. Don't use puts with map!
+
+HASHES
+	-When trying to access a key that has not yet been defined, it will not throw an error, but instead show nil
+	-Setting Default Value: Pass argument to Hash.new eg Hash.new("default value") In this case, when trying to access a key that has not been created, it will return the default value.
