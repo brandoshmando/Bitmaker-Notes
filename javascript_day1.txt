@@ -1,0 +1,107 @@
+Javascript
+==========
+  History:
+    - Used to be client sid and browser only, until nodejs
+    - Mostly client side and in the browser
+    - Able to control the DOM
+    - Initially designed in '95
+    - "Written in 10 days............" which can make it somewhat quirky
+    - Named javascript to piggy back on fame of java, but completely unrelated
+    - AJAX contributed to popularity(method to where page does not refresh but javascript can hit the database and return bits of info)
+
+  JS Console in Development tools cmd + option + j
+    - typeof() method will give you the datatype ie NaN == Not a Number
+
+  Datatypes (Not a lot of methods by themselves)
+  ---------
+  - Number (no difference in float vs integer etc)
+    * Use regular initializer or literal (ie for 1 for literal)
+  - String
+    * String literal is in quotes
+    * No string interpolation, only quotes and concat with +'s'
+    * Different operaitons with strings will turn up weird results...
+  - Booleans
+    * True, False or 1, 0
+    * Same boolean operators
+  - Undefined
+    * Lack of value, at its simplest form. Nothing as been defined for "it" yet
+  - Null
+    * Explicity nothing. You can set a var to null
+
+  Logical Operators
+  --------------------
+  - Same as ruby for the most part...
+  - === to check if same datatype
+  - Favor the triple equals unless there is a specific reason to use double
+    * Ex "1" == 1 will be true where as === will be false. Datatype & value vs datatype
+  - !== is 'not' for triple equals
+
+  Variables
+  ---------
+  - instantiate a varioable with var someVariableName = "stuff" ;
+  - Don't start with capital letters because they have special meanign (convention)
+  - Can start with $ _ or lowercase
+  - camel case in javascipt ie Ruby: some_variable JS: var someVariableName = "stuff";
+  -semi-colon at the end of the line ALWAYS
+
+
+  Objects
+  -------
+
+  - Not OO like ruby, but there are permanent objects
+  - Arrays
+    * var myArray = ["banana", "apple", "orange"];
+    * typing myArray. in will autocomplete all available methods on object type
+    * Useful iterators:
+      -myArray.forEach( function(fruit) {alert(fruit); })
+  - Dates
+    * Only way to intantiate is using contructor
+    * var date = new Date(year, month, day etc.);
+    * Month is 0 indexed in javascript WHAT THE FUCK
+  -Math
+    * Gives lots of functions
+    Math.PI etc etc Lots of methods in there for you
+
+  Methods
+  -------
+  - Called the same way
+   * ie myArray.forEach or myArray.length
+  - Able to pass around functions unlike ruby
+  - Kind of uses regex's in an easy way "bitmaker labs".replace("labs", "heaven")
+  - Case statements similar to ruby
+  - forEach
+  - for(given statement)
+  - Lots of very similar iterators
+
+  JS + HTML
+  ---------
+  - Generally goes in head so that it loads right away
+  - <script type="text/jacascript" src="source goes here"></script>
+  - // starts one liner comment
+  - /* */ for multi line comment
+
+  Defining custom methods(functions)
+  ----------------------------------
+  - Named vs defined functions
+  - define by:
+    function myFunction(){
+      // code goes here
+    }
+  - Must have brackets even if nothing is going in!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

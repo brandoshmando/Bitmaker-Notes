@@ -1,0 +1,63 @@
+The DOM...dom dom....
+---------------------
+
+DOM == The Document Object Model
+  - Provides a structure where everything on an html page as an object in a tree
+
+  Window Object:
+    - Shows properties like .location, .history, .document
+
+  Document Object:
+    - Represents the entirety of HTMl
+    - Has children; aware of everyhting within html body tag
+    - Can be accessed on its own without window if need be
+    - Children of documents = nodes; nodes can have nodes!!
+    - Three methods to access these nodes with POJ:
+      * getElementById (singular because Id)
+        - selects with id
+      * getElementByClassName
+        - selects with class name
+        - use [index number] syntax to select specific items within class
+      * getElementsByTagName
+        - selects with html tag
+    - Create elements with createElement (not inserted yet)
+    - Insert by calling someVariable.appendChild(some varibale that contains element you created)
+    - After selecting an object and assigning it to a variable, you can manipulate the object using its attributes as methods to change things ie picture.src = different than og src
+    -style is an object itself and has its own methods to be called on it ie picture.style.border = some border styling
+
+    Some code:
+    //Insert new paragraph
+    var newParagraph = document.createElement('p')
+    var myText = document.createTextNode("Happy Day")
+    newParagraph.appendChild(myText)
+
+JQuery
+  - Inlude external jquery lib in script tag of html
+  - When speaking to JQ lib, start with $ or JQuery
+  - Can use any css selector vs id, class, or tag
+   * var myDiv = $('.potato')    vs in JS var myDiv = document.getElementById('potato');
+   * vat myPicture = $('#picture')
+
+  Some Code:
+  //Acts somewhat like a regex...
+    var p = $('p:contains("This is a paragraph"))
+    p.siblings(); returns siblings
+    p.parent(); returns parent
+
+  //Manipulate CSS
+  var kitten = $('some image')
+  kitten.css('border') returns value for css border element
+  kitten.css('border', '10px solid red') sets css for that item
+
+  //Manipulate HTML attributes
+  kitten.attr('title', 'Kitties!') Adds title to image
+
+  var p = $('some paragraph you select')
+  p.text('new text!')
+
+  Also has methods like .html and insert new html...
+
+  //Clone (handy method)
+  var newPar = $('p').clone; Created new dom element but not yet appended
+  newPar.text("Another paragraph"); sets new text
+  $('body').prepend(newPar); gets inserted above last comment

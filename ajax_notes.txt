@@ -1,0 +1,40 @@
+Ajax
+====
+
+Asynchronous
+Javasciript
+And
+Xml (or json or javascript or text etc.)
+
+- Only a technique!
+- Only requests what it needs vs. entire page like traditional
+- XMLHttpRequest Objects
+
+Thus far we have only made requests with forms and urls
+
+- SQL:
+    - LIKE % #{string} % will query database and anywhere in a string that "stuff matches" will be returned
+    - LOWER converts (temporarily) to lowercase, everything in database to query
+
+Vanilla Javascript(normally jquery)
+  - generate new XMLHttpRequest Object
+    var xhr = XMLHttpRequest();
+    xhr.onload = display_search_results;
+    xhr.open('GET', '/products?seearch=' + searchValue, true);
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+
+Anatomoy of an Ajax Request
+---------------------------
+- Specify  a URL, a method, and data type
+- Make request and then server response come in; specifice to ^^
+- Handles requested info in the way it specified (not necessarily re-inserted, but most of the time that is the case). While in JS land, handle with callback (DOM manip, etc)
+
+NOTE:
+-----
+$(document).on('ready page:load', function () ...) DO this otherwise you will have turbolinks issues!!!
+
+jQuery ajax calls
+----------------
+- Most general/can always use: $.ajax({arguments}).done().fail().always();
+- For get requests: $.get({url, callback}, data type)
+- Get request for datatype script: $.getScript (no callback because script executes as soon as it is returned)
