@@ -1,0 +1,19 @@
+The Pipeline
+------------
+- css/sass/scss
+- javascript
+- fonts
+- audio, video, pdf, normal files
+
+Sprites:
+  - One image with a bunch of icons loaded and specified with css what to show
+
+Client
+(Int'l products use CDN)
+------
+web server (nginx, apache)
+------
+app server (webrick, unicorn, mongrel, thin, puma)
+------
+--> db server (postgres, mysql, etc.)
+---------------
